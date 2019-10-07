@@ -19,6 +19,7 @@ module Duration = {
   [@bs.send] external years: t => int = "";
   [@bs.send] external asYears: t => float = "";
   [@bs.send] external toJSON: t => string = "";
+  [@bs.send] external toISOString: t => string = "";
   [@bs.send.pipe: t]
   external asUnitOfTime:
     (
